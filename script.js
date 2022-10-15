@@ -5,6 +5,8 @@ function hidemenu() {
   else menu.style.display = "flex";
   click++;
 }
+var shortener = document.querySelector(".shortener")
+shortener.style.display = "none";
 var result;
 const fetchURL = async () => {
   var linkform = document.querySelector("#link");
