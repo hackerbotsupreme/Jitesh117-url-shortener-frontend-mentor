@@ -18,7 +18,7 @@ const fetchURL = async () => {
   shortlinks.innerHTML = shortlink;
   const copybutton = document.querySelector("#copybutton");
   copybutton.innerHTML = `Copy`;
-  short.style.display = "inherit";
+  short.style.display = "flex";
 };
 function copyURL() {
   const copybutton = document.querySelector("#copybutton");
