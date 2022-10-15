@@ -27,6 +27,7 @@ main {
 /* header */
 header {
   display: flex;
+  background-color: white;
 }
 #logo {
   width: 35%;
@@ -264,12 +265,13 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px;
   }
   .navbar {
     display: flex;
+    background-color: white;
     justify-content: space-between;
-    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 10px;
   }
   #line {
     width: 100%;
@@ -293,6 +295,9 @@ footer a {
     width: 12%;
     margin-top: auto;
   }
+  .more{
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -302,7 +307,7 @@ footer a {
   header {
     display: flex;
     justify-content: space-between;
-    margin: auto 15%;
+    padding: 10px 15%;
   }
   header #logo {
     width: 95%;
