@@ -117,7 +117,7 @@ h1 {
 
 /* info section */
 .stats {
-  background-color: hsla(258, 7%, 63%, 0.123);
+  text-align: center;
 }
 #advanced {
 }
