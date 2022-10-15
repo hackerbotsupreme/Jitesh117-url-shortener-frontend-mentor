@@ -28,48 +28,56 @@
   </head>
   <body>
     <header>
-      <img id="logo" src="./images/logo.svg" alt="" />
-      <img id="hamburger" src="./images/menu.svg" alt="" onclick="hidemenu()" />
-      <!-- 
-
-        Features
-  Pricing
-  Resources
-
-  Login
-  Sign Up -->
-    </header>
-    <main>
+      <div class="navbar">
+        <img id="logo" src="./images/logo.svg" alt="" />
+        <img
+          id="hamburger"
+          src="./images/menu.svg"
+          alt=""
+          onclick="hidemenu()"
+        />
+      </div>
       <div class="hero">
         <div class="menu">
-          <div class="menulinks">Features</div>
-          <div class="menulinks">Pricing</div>
-          <div class="menulinks">Resources</div>
-          <div class="menulinks" id="line"></div>
-          <div class="menulinks">Login</div>
-          <button class="menulinks">Sign Up</button>
-        </div>
-        <div class="more">
-          <img src="./images/illustration-working.svg" alt="" />
-          <div class="text">
-            <h1>More than just shorter links</h1>
-            <p>
-              Build your brand’s recognition and get detailed insights on how
-              your links are performing.
-            </p>
-            <button class="getstarted">Get Started</button>
+          <div class="left">
+            <div class="menulinks">Features</div>
+            <div class="menulinks">Pricing</div>
+            <div class="menulinks">Resources</div>
+            <div class="menulinks" id="line"></div>
+          </div>
+          <div class="right">
+            <div class="menulinks">Login</div>
+            <button class="menulinks">Sign Up</button>
           </div>
         </div>
       </div>
+    </header>
+    <main>
+      <div class="more">
+        <img src="./images/illustration-working.svg" alt="" />
+        <div class="text">
+          <h1>More than just shorter links</h1>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <button class="getstarted">Get Started</button>
+        </div>
+      </div>
       <div class="short">
-        <form action="">
+        <form>
           <input id="link" type="text" placeholder="Shorten a link here" />
-          <input id="submit" type="button" value="Shorten it" />
+          <input
+            onclick="fetchURL()"
+            id="submit"
+            type="button"
+            value="Shorten it"
+          />
         </form>
       </div>
       <div class="shortener" onclick="showbutton()">
         <div class="shortlinks">https://github.com/Jitesh117</div>
-        <button id="copybutton" onclick="showbutton()">Copy</button>
+        <button id="copybutton" onclick="copyURL()">Copy</button>
       </div>
       <section class="stats">
         <h2 id="advanced">Advanced Statistics</h2>

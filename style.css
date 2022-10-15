@@ -19,7 +19,10 @@ html {
   font-family: "Poppins", sans-serif;
 }
 body {
-  /* background-color: hsla(258, 7%, 63%, 0.123); */
+  background-color: hsla(258, 7%, 63%, 0.123);
+}
+main {
+  background-color: hsla(258, 7%, 63%, 0.123);
 }
 /* header */
 header {
@@ -33,6 +36,12 @@ header {
 /* hero section */
 .hero {
   margin-bottom: 50px;
+}
+/* .more{
+  overflow: hidden;
+} */
+.more {
+  background-color: white;
 }
 p {
   font-size: 0.7rem;
@@ -203,6 +212,9 @@ footer a {
 
 /* mobile view */
 @media screen and (max-width: 600px) {
+  .more img {
+    width: 105%;
+  }
   body {
     text-align: center;
   }
@@ -219,7 +231,7 @@ footer a {
     margin-left: 20px;
   }
   .boost {
-    background-image: url(./images/bg-boost-mobile.svg);
+    background-image: url(./images/bg-boost-desktop.svg);
   }
   .flex {
     flex-direction: column;
@@ -238,14 +250,25 @@ footer a {
     position: absolute;
     background-color: var(--dviolet);
     padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: white;
     border-radius: 5px;
     font-size: 0.8rem;
   }
   .menulinks:hover {
     cursor: pointer;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
   #line {
     width: 100%;
@@ -265,11 +288,6 @@ footer a {
   .menulinks {
     margin-top: 10px;
   }
-  header {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-  }
   #hamburger {
     width: 12%;
     margin-top: auto;
@@ -277,31 +295,152 @@ footer a {
 }
 
 @media screen and (min-width: 601px) {
-  .more {
+  main {
+    overflow: hidden;
+  }
+  header {
     display: flex;
+    justify-content: space-between;
+    margin: auto 15%;
+  }
+  header #logo {
+    width: 95%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+  }
+  .menu {
+    /* margin-top: 50px; */
+    display: flex;
+  }
+  .menulinks {
+    margin-right: 10px;
+    font-size: 0.5rem;
+    margin-top: 50px;
+  }
+  .left {
+    display: flex;
+    margin-left: 0px;
+  }
+  .right {
+    display: flex;
+  }
+  .right button{
+    background-color: var(--cyan);
+    color: white;
+    border-radius: 10px;
+    padding: 2px 10px;
+    align-self: center;
+    border: none;
+    outline: none;
+  }
+  #hamburger {
+    display: none;
+  }
+  .text h1 {
+    font-size: 3rem;
+    margin-top: 25px;
+  }
+  .more {
+    background-color: white;
+    padding-bottom: 80px;
+    display: flex;
+    width: 100%;
     flex-direction: row-reverse;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   .more img {
-    width: 50%;
+    width: 100%;
+    height: fit-content;
+    align-self: center;
+    margin-right: -40%;
   }
-  .hero {
+  /* .hero {
     margin: 20px 100px;
-  }
-  /* .blueline {
-    width: 40rem;
-    background: var(--cyan);
-    height: 0.4rem;
-    margin-top: 10px;
-    z-index: -1;
   } */
+  .text {
+  }
+  .short {
+    margin-top: -40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-direction: row;
+  }
+  form {
+    display: flex;
+    margin: 10px;
+  }
+  form #link {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 10px;
+  }
+  form #submit {
+    width: 30%;
+    padding: inherit 20px;
+    margin-left: 10px;
+    margin-top: auto;
+  }
+  .shortener {
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15%;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-top: inherit;
+    align-items: center;
+  }
+  #copybutton {
+    width: 20%;
+    margin-top: auto;
+    /* padding: auto 15px; */
+  }
+  .boost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  .boost h1 {
+    font-size: 1.5rem;
+  }
+  .flex {
+    margin: auto 15%;
+  }
+  .card {
+    text-align: center;
+    border-radius: 5px;
+  }
+  .card p {
+    font-size: 0.5rem;
+  }
   .brand {
-    padding-bottom: -10px;
+    height: fit-content;
   }
   .records {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 30px;
+    height: fit-content;
   }
   .customise {
-    margin-top: 60px;
+    margin-top: 80px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 10%;
+  }
+  footer #logo {
+    width: 15%;
+    height: fit-content;
+    align-self: center;
+  }
+  footer .socials {
+    margin-top: 5px;
   }
 }
